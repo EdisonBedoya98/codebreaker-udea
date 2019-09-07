@@ -6,7 +6,7 @@ var app = express();
 app.get('/setsecret/:secret', function (req, res){
   number = req.params.secret;
   CodeBreaker.setSecret(number);
-  res.send({message: 'Ok, let the game begin'});
+  res.send({message: 'Ok, let the game begins'});
 });
 
 app.get('/guess/:number', function (req, res){
