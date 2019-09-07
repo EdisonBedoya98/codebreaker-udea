@@ -14,4 +14,12 @@ app.get('/guess/:number', function (req, res){
   res.send({result: CodeBreaker.guess(number)});
 });
 
+app.get('/upgrade/', function (req, res){
+  res.send({message: 'Ok upgrade!!!!'});
+});
+
+app.get('/Delete/', function (req, res){
+  res.send({message: 'Ok delete!!!!'});
+});
+
 module.exports = app;
